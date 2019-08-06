@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  * Esta clase nos permite comenzar la secuencia de batalla 
- * @author DELL-PC
+ * @author ray_din
  */
 public class Batalla {
     
