@@ -1,0 +1,240 @@
+
+html { font-size: calc(1em + 0.8vw);
+    text-align: justify;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color:aliceblue;
+    margin:0px;
+    padding: 0px;
+}
+
+main{
+    margin: 0% 10% ;
+}
+
+h1,h2,h3{
+    font-family: 'Courgette', cursive;
+}
+
+main > h1 {
+    text-decoration: underline;
+}
+
+p{
+    font-family: 'Alegreya', serif;
+}
+
+header{
+    display: flex;
+    margin:0px;
+    padding: 2.5%;
+    height: 400px;
+    background:linear-gradient(-45deg,darkblue,deepskyblue,white);
+    background-size: 300% 300%;
+    overflow:hidden;
+    animation-delay: 1.5s;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-play-state: revert;
+    animation-direction: alternate-reverse;
+}
+
+
+.select{
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+
+
+@keyframes color {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.ab{
+    border:1px solid;
+}
+
+.lara {
+    width: 30%;
+    background-image: url(../img/laravel.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.eslo{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin: 1%;
+}
+
+.eslo > h1 {
+    color:cyan;
+    text-align: center  ;
+    animation-name: tsha;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    text-shadow: 0px 0px 0px transparent ;
+}
+
+@keyframes tsha {
+    0%{
+
+    }
+    100%{
+        text-shadow: 0px 0px 2px black ;
+    }
+}
+
+#nav-bar {
+    display: flex;
+    flex:0 0 240px;
+    justify-content:center;
+}
+
+#nav-bar > div {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.dcode {
+    background-color:#ccf3ff;
+    padding: 2%;
+    box-shadow: 2px 2px 3px 3px gray;
+}
+
+.nav-link {
+    font-size: 20px;
+    display:block;
+    margin:0px;
+    padding:17px;
+    text-align:center;
+    transition:0.45s;
+    background:white;
+    color:black;
+    text-decoration:none;
+}
+
+.nav-link:hover{
+    background-color:darkblue;
+    color:white;
+}
+
+@media (max-width: 720px) {
+    header{
+        height: 300px;
+
+    }
+}
+
+#navbar{
+    position:sticky;
+    top:0px;
+    background:white;
+    display:flex;
+    width:100%;
+    padding:0px;
+    box-shadow:1px 2px 5px gray;
+    align-items: center;
+}
+
+.flog{
+    font-family: 'Dancing Script', cursive;
+    margin:0px;
+    font-size: 150%;
+    min-width:140px;
+    color:black;
+    //border:1px solid;
+}
+
+
+#nav-bar {
+    display: flex;
+    flex:0 0 540px;
+    justify-content:center;
+}
+
+#navbar > div{
+    width:100%;
+    text-align:center;
+//border:1px solid red
+}
+
+
+#header-img{
+    margin-left: 5%;
+    width:50px;
+    float:left;
+}
+
+#foot{
+    width:100%;
+    text-align:center;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+    background:linear-gradient(0deg,cyan,white);
+}
+
+#foot > div {
+    margin:3%;
+    font-size: medium;
+}
+
+.box1{
+    border: 10px solid darkblue;
+    color: {{colo1}};
+}
+
+
+
+@media (max-width:600px){
+    header{
+        height: 250px;
+    }
+
+    #header-img{
+        margin-top: 35%;
+        width:50px;
+        float:left;
+    }
+
+    #navbar{
+        position:sticky;
+        top:0px;
+        background:white;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        //align-content:center;
+        width:100%;
+        padding:0px;
+        box-shadow:1px 1px 5px gray;
+    }
+
+    #foot > div {
+        margin:5%;
+        font-size: small;
+    }
+
+
+
+}
+
