@@ -1,4 +1,4 @@
-Estas son las paginas que se hicieron como ejercicios para obtener la certificación
+Estas son las paginas que se hicieron como ejercicios para reforzar los conceptos de la certificación
 
 https://codepen.io/x1hibi/pen/rXVroO
 
