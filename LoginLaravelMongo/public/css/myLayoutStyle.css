@@ -1,0 +1,403 @@
+/************VARIABLES**************/
+
+
+/************TABLET&SMARTPHONE**************/
+:root {
+    /*variables for document and body*/
+    --bodyBackground: white;
+    --textFontFamily:'EB Garamond', serif;
+    --textSize:1.25em;
+    --subTitleFontFamily:'ABeeZee', sans-serif;
+    /*variables for the header*/
+    --bannerBackground:darkblue;
+    --bannerHeight: 100px;
+    --bannerImageShadow: 0 0 10px 2px darkblue;
+    --bannerPadding: 15px;
+    --titleFontFamily:'Bitter', serif;
+    --titlePadding:0 2.5%;
+    --titleSize: 2.5em;
+    /*variables for the navbar*/
+    --navbarBackground:var(--bannerBackground);
+    --navbarHeight:48px;
+    --navbarShadow:0 6px 3.5px 0.5px rgba(128, 128, 128, 0.35);
+    --navbarTextColor:cyan;
+    --navbarOrder:left;
+    --navbarPadding:12px 30px;
+     /*variables for the main*/
+    --mainBackground:linear-gradient(white, cyan);
+    --mainGridColumnSize: 1fr;
+    --mainGridSeparation:2%;
+    --mainPadding:2%;
+     /*variables for the sidebar*/
+    --sidebarBackground:#faD;
+    --sidebarCorners:2px;
+    --sidebarDisplay:none;
+    --sidebarLeftInternalPadding: .8em;
+    --sidebarShadow: 0 0 1px 1px blue;
+    --sidebarPadding:.5em;
+     /*variables for section*/
+    --sectionBackground:aqua;
+    --sectionCorners:10px;
+    --sectionShadow: 0 6px 5px 2.5px rgba(128, 128, 128, 0.35);
+    --sectionPadding:.5em;
+    --sectionHeaderBackground:rgba(14, 14, 137, 0.74);
+    /*variables for article*/
+    --articleHeaderPadding: 0;
+    --articleHeaderTextColor: white;
+    --articleButtonBackground:darkblue;
+    --articleButtonColor:white;
+    --articleButtonSize:2.5em;
+    --articleButtonWidth:0;
+    --videoHeight:10em;
+    /*variables for form*/
+    --formInputWidth:75%;
+     /*variables for the footer*/
+    --footerBackground:darkblue;
+    --footerTextColor:#ccffff;
+    --footerTextSize:1.15em;
+    --footerPadding:1.75em;
+}
+
+/*******VARIABLES(MEDIA QUERIES)********/
+
+/************DESKTOP&LAPTOP**************/
+    @media screen and (min-width:1025px) {
+    :root {
+        /*variables for document*/
+        --bannerHeight: 200px;
+        --mainGridColumnSize: 25% 1fr;
+        --sidebarDisplay:"";
+        --formInputWidth:35%;
+        --videoHeight:25em;
+    }
+
+        
+}
+    
+
+
+/************DOCUMENT************
+
+* {
+    border:1px solid red;
+}
+
+
+
+*/
+
+body {
+    background-color: var(--bodyBackground);
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3,
+h4{
+    box-sizing: border-box;
+    display: inline;
+    flex-grow: 1;
+    font-family:var(--titleFontFamily);
+    align-self: center;
+    margin: 0;
+    text-align: center;
+
+}
+
+p {
+    font-family: var(--textFontFamily);
+    font-size: var(--textSize);
+    text-align: justify;
+}
+
+
+/************CONTAINERS**************/
+
+
+.flexContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+.imageResponsive {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+iframe {
+    box-sizing: content-box;
+    height: var(--videoHeight);
+    width: 100%;
+}
+/************HEADER**************/
+
+/*********BANNER******/
+
+
+
+.banner {
+    background-color: var(--bannerBackground);
+    box-sizing: border-box;
+    height: var(--bannerHeight);
+    padding: var(--bannerPadding);
+    transition-duration: .75s;
+    width: 100%;
+}
+
+
+#bannerTitle {
+    color:white;
+    font-family: var(--titleFontFamily);
+    font-size: var(--titleSize);
+    text-shadow: 0 0 5px black;
+    padding: var(--titlePadding);
+}
+
+#bannerImage {
+    background-color: lightgray;
+    border-radius: 100%;
+    box-shadow:var(--bannerImageShadow);
+}
+
+/**************NAVBAR*********/
+
+nav {
+    background-color: var(--navbarBackground);
+    box-shadow:var(--navbarShadow);
+    box-sizing: border-box;
+    height: var(--navbarHeight);
+    transition-duration: 0.25s;
+    width: 100%;
+    overflow:auto;
+    white-space: nowrap;
+}
+
+ul {
+    margin:0;
+    padding:0;
+}
+
+li {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+
+nav a {
+    color: var(--navbarTextColor);
+    display: inline-block;
+    list-style-type: none;
+    font-family:'Cormorant Garamond', serif;
+    font-size:125%;
+    padding: var(--navbarPadding);
+    text-decoration: none;
+    transition-duration:0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+nav a:hover{
+    color: white;
+    text-shadow:0 0 5px black;
+    text-shadow:0 0 10px white;
+}
+
+
+/***********MAIN***********/
+
+main {
+    background-image: var(--mainBackground);
+    border-top:1px solid darkred;
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: var(--mainGridSeparation);
+    grid-template-columns:var(--mainGridColumnSize);
+    margin: 0;
+    padding: var(--mainPadding);
+}
+
+/**********ASIDEBAR**************/
+
+aside {
+    background-color: var(--sectionBackground);
+    border-radius: var(--sidebarCorners);
+    box-shadow: var(--sectionShadow);
+    box-sizing: border-box;
+    display: var(--sidebarDisplay);
+    height: fit-content;
+    overflow-y: scroll;
+    padding: var(--sidebarPadding);
+}
+
+aside ol {
+  counter-reset: item;
+  padding-left:var(--sidebarLeftInternalPadding);
+}
+
+aside ol li {
+    list-style-type: none;
+}
+
+aside ol li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item
+}
+
+/**********SECTION***********/
+
+
+section {
+    background-color: var(--sectionBackground);
+    border-radius: var(--sectionCorners);
+    box-shadow: var(--sectionShadow);
+    box-sizing: border-box;
+    height: fit-content;
+    overflow-y: visible;
+    padding: 0;
+    width: 100%;
+}
+
+
+/**********ARTICLE&HEADER***********/
+
+article {
+    margin: 2.5%;
+    padding: 2.5%;
+    border-bottom:1px solid gray;
+}
+
+
+.sectionHeader{
+    background-color: darkblue;
+    border-radius: 10px 10px 0 0;
+    box-sizing: content-box;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 100%;
+    height: fit-content;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+i {
+    align-self: center;
+    background-color: var(--articleButtonBackground);
+    box-sizing: border-box;
+    color: var(--articleButtonColor);
+    font-size: var(--articleButtonSize);
+    font-weight: 700;
+    height: 100%;
+    transition-duration: 3s;
+}
+
+#left:hover{
+    background-image:linear-gradient(to left,darkblue, black);
+}
+#right:hover{
+    background-image:linear-gradient(to right,darkblue, black);
+}
+
+.flexContainer div {
+    color: white;
+    text-align: center;
+}
+
+
+/**********FORMS***********/
+
+form {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 100%;
+    width: 100%;
+}
+
+form h2 {
+    color:#660033;
+    font-size:2.5em;
+    font-style:italic;
+    font-weight:100;
+}
+
+label {
+    color:#336699;
+    display: block;
+    font-size:1.25em;
+    font-style: oblique;
+    text-align: center;
+    margin: 1.5%;
+}
+
+input {
+    background-color: white;
+    border-color: lightblue;
+    border-radius: 15px;
+    border-width: 2px;
+    border-style: double;
+    display: block;
+    font-size:0.75em;
+    font-style: italic;
+    outline:none;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    transition-duration: 0.35s;
+    transition-timing-function: ease-in-out;
+    width: var(--formInputWidth);
+
+}
+
+input:hover{
+    box-shadow: 0 0 5px 2px blueviolet;
+}
+
+input:focus{
+    box-shadow: 0 0 5px 2px darkblue;
+}
+
+input[type="submit"]{
+    background:darkblue;
+    border-radius:40px;
+    color:white;
+    font-size:1em;
+    padding:15px;
+    width:fit-content;
+}
+
+textarea{
+    background-color: white;
+    border-color: lightblue;
+    border-radius: 15px;
+    border-width: 2px;
+    margin:auto;
+    min-height:200px;
+    max-height:400px;
+    outline:none;
+    padding:5px;
+    resize:vertical;
+    width:var(--formInputWidth);
+}
+
+
+/**********FOOTER***********/
+
+footer {
+    background-color: var(--footerBackground);
+    padding:var(--footerPadding);
+}
+
+footer p {
+    color: var(--footerTextColor);
+    font-size: var(--footerTextSize);
+    margin: auto;
+    text-align: center;
+    text-shadow:0 0 5px black;
+    width: fit-content;
+}
+
+footer span {
+    font-style:italic;
+    font-weight:700;
+}
