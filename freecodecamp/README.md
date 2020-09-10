@@ -11,7 +11,7 @@
 
 **Random quote** https://codepen.io/x1hibi/full/wvKaLJq
 
-#CERTIFICADO "JavaScript Algorithms and Data Structures"
+# CERTIFICADO "JavaScript Algorithms and Data Structures"
 
 https://www.freecodecamp.org/certification/x1hibi/javascript-algorithms-and-data-structures
 
@@ -27,7 +27,7 @@ https://codepen.io/x1hibi/pen/YmyNaZ
 
 https://codepen.io/x1hibi/pen/bXVRQx
 
-#CERTIFICADO "Responsive Web Design"
+# CERTIFICADO "Responsive Web Design"
 
 https://www.freecodecamp.org/certification/x1hibi/responsive-web-design
 
