@@ -15,7 +15,7 @@
 
 https://www.freecodecamp.org/certification/x1hibi/javascript-algorithms-and-data-structures
 
-### Paginas de ejercicio para reforzar los conceptos de la certificación Diseño web responisvo
+### Paginas de ejercicio para reforzar los conceptos del diseño responsivo
 
 https://codepen.io/x1hibi/pen/rXVroO
 
