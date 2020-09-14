@@ -5,7 +5,7 @@
 
 **Responsive calculator** https://codepen.io/x1hibi/full/YzyxLQZ
 
-**Drum simulator** codepen.io/x1hibi/full/mdeRPvm
+**Drum simulator** https://ccodepen.io/x1hibi/full/mdeRPvm
 
 **Markup editor** https://codepen.io/x1hibi/full/BaoKRQG
 
